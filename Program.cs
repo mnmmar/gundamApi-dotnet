@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 //origin
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
 {
-    build.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader();
+    build.WithOrigins("https://dotnetgundam.netlify.app/").AllowAnyMethod().AllowAnyHeader();
 }
 ));
 
